@@ -6,8 +6,20 @@
 // - Any other month number: return 0.
 
 function getDaysInMonth(month) {
+let days = 0;
+  if (month <= 0 || month > 12) {
+    days = 0;
+  } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    days = 30;
+  } else if (month == 2) {
+    days = 28;
+  } else {
+    days = 31;
+  }
+  return days;
+  }
   // your code
-}
+
 
 // Expected output:
 console.log(getDaysInMonth(1));   // 31

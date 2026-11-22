@@ -6,7 +6,7 @@
 
 function power(base, exponent) {
   let pow = 1;
-  for (let i = 0 ; i <= exponent; i++){
+  for (let i = 0 ; i < exponent; i++){
     pow = pow * base;
   }
   return pow ;
